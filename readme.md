@@ -9,7 +9,6 @@
 
 - [概览](#概览)
 - [关注我](#关注我)
-- [先TM点Star](#先tm点star)
 - [免责声明](#免责声明)
     - [让你们看看原神的力量 去吧 芭芭拉](#让你们看看原神的力量-去吧-芭芭拉)
 - [使用](#使用)
@@ -34,21 +33,19 @@
 
 # 关注我
 
-关注我的Twitter(X) 平台ID OK？关注落叶喵，关注QiuChenly谢谢喵
+关注我的Twitter (X) 平台 ID OK？关注落叶喵，关注 QiuChenly 谢谢喵
 
 [QiuChenly](https://twitter.com/QiuChenly)
 
-# 先TM点Star
-先TM点Star！别光几把点你那b fork按钮了 老子不更新你光fork项目有几把用？留着当互联网活化石？
 
 # 免责声明
 
 致来自中国大陆的各位学习研究爱好者:<br>
-   根据大陆中华人民共和国《计算机软件保护条例》第十七条规定：“为了学习和研究软件内含的设计思想和原理，通过安装、显示、传输或者存储软件等方式使用软件的，可以不经软件著作权人许可，不向其支付报酬。”您需知晓本仓库所有内容资源均来源于网络，仅供用户交流学习与研究使用，版权归属原版权方所有，版权争议与本仓库本作者无关，用户本人下载后不能用作商业或非法用途，需在24小时之内删除，否则后果均由用户承担责任。如果你不删,请发邮件到qiuchenly@outlook.com, 我做个登记, 然后让这些喜欢发律师函的事务所一对一指导你。
+   根据大陆中华人民共和国《计算机软件保护条例》第十七条规定：“为了学习和研究软件内含的设计思想和原理，通过安装、显示、传输或者存储软件等方式使用软件的，可以不经软件著作权人许可，不向其支付报酬。”您需知晓本仓库所有内容资源均来源于网络，仅供用户交流学习与研究使用，版权归属原版权方所有，版权争议与本仓库本作者无关，用户本人下载后不能用作商业或非法用途，需在24小时之内删除，否则后果均由用户承担责任。如果你不删,请发邮件到 qiuchenly@outlook.com, 我做个登记, 然后让这些喜欢发律师函的事务所一对一指导你。
 
-我是来自北美的独立IOS应用开发者, 是二次元南桐. 从早稻田毕业的那一天, 我的青春也永远留在了京都.
+我是来自北美的独立 iOS 应用开发者, 是二次元南桐. 从早稻田毕业的那一天, 我的青春也永远留在了京都.
 
-对了,下次发律师函的时候记得发往我住的地方: 华盛顿特区第35大道林肯大街15号-501, John Albet收.
+对了,下次发律师函的时候记得发往我住的地方: 华盛顿特区第35大道林肯大街15号-501, John Albet 收.
 
 ### 让你们看看原神的力量 去吧 芭芭拉
 
@@ -67,25 +64,21 @@
 
 这里列举一下可能会遇到的问题。
 
-1. 遇到"xxx想要访问你的机密信息"<br>
+1. 遇到"xxx 想要访问你的机密信息"<br>
    ![img.png](img.png)<br>
    原因:<br>
-   补丁对某些App会自动签名以保证能在SIP打开的情况下使用.但是保存在钥匙串里的信息只能被官方签名的app读取
-   自己签名App后会造成丢失权限<br><br>
+   补丁对某些 App 会自动签名以保证能在 SIP 打开的情况下使用。但是保存在钥匙串里的信息只能被官方签名的 App 读取
+   自己签名 App 后会造成丢失权限<br><br>
    解决方案:<br>
-   去钥匙串删除这个App用到的几个“机密信息”,说实话就你那破b电脑上能有什么机密信息啊？都用云上贵州了你的那点b信息谁不知道啊？
+   在钥匙串删除该 App 使用的相关“机密信息”。
 
-2. 我不会用终端<br>
-   解决方案:<br>
-   没脑子？不会百度？动手破解软件不会可以理解，用别人写好的脚本一键破解也不会？21世纪怎么还会有这么废物的人啊？
-
-3. 需要移到垃圾篓
+2. 需要移到废纸篓
    
-   应该是App没有打开过就直接执行注入了。这可能会导致检查不通过，不过影响不是很大。建议App在注入前先运行一次。
+   应该是 App 没有打开过就直接执行注入了。这可能会导致检查不通过，不过影响不是很大。建议 App 在注入前先运行一次。
 
-   ![移到垃圾桶](image-3.png)
+   ![移到废纸篓](image-3.png)
 
-   这是正常的，因为SIP打开的情况下如果修改了App会导致校验不通过，你只需要手动从Finder中右击点开一次就好了:<br>
+   这是正常的，因为 SIP 打开的情况下如果修改了 App 会导致校验不通过，你只需要手动从访达中右击点开一次就好了:<br>
    ![打开](image-4.png)
    ![进一步打开](image-5.png)
 
@@ -98,12 +91,12 @@
    开始注入App: com.nssurge.surge-mac
    /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/fileutils.rb:1387:in `initialize': Operation not permitted @ rb_sysopen - /Applications/Surge.app/Contents/Frameworks/Bugsnag.framework/Versions/A/Bugsnag_backup (Errno::EPERM)
    ```
-   这是很多人会遇到的问题。<br>Operation not permitted就是终端app需要修改app，但是没权限 所以会崩溃。<br>
+   这是很多人会遇到的问题。<br>Operation not permitted 意味着终端 App 在修改目标 App 时由于没有权限所导致的崩溃。<br>
    原因：终端没有给操作权限<br>
    解决办法：<br>
    1. 打开设置<br>
    2. 隐私和安全性<br>
-   3. 开发者工具 和 App管理<br>
+   3. 开发者工具 和 App 管理<br>
    4. 两个地方都要打开终端开关，重启终端即可正常执行。<br>
    ![terminal](image-6.png)<br>
    ![还有这个](image-8.png)
@@ -133,45 +126,45 @@
 | Infuse Pro                                     | 通杀                                                                                        |   ✅   |   ✅   | ✅   |                                                                                                                                                                                 | 
 | MWEB Pro                                       | 通杀                                                                                        |   ✅   |   ✅   | ✅   |                                                                                                                                                                                 | 
 | 解优2                                            | 通杀                                                                                        |   ✅   |   ✅   | ✅   |                                                                                                                                                                                 | 
-| Omi录屏专家                                        | 通杀                                                                                        |   ✅   |   ✅   | ❌   | 需要从Mac AppStore 下载                                                                                                                                                              | 
-| OmniPlayer                                     | 通杀                                                                                        |   ✅   |   ✅   | ✅   | 需要从Mac AppStore 下载                                                                                                                                                              |
-| Navicat Premium                                | 通杀                                                                                        |   ✅   |   ✅   | ✅   | 需要从Mac AppStore 下载                                                                                                                                                              |
-| Navicat 16 ForOracle                           | 通杀                                                                                        |   ❌   |   ✅   | ✅   | 需要从Mac AppStore 下载 我下不到ARM64的版本                                                                                                                                                 |
+| Omi录屏专家                                        | 通杀                                                                                        |   ✅   |   ✅   | ❌   | 需要从Mac App Store 下载                                                                                                                                                              | 
+| OmniPlayer                                     | 通杀                                                                                        |   ✅   |   ✅   | ✅   | 需要从Mac App Store 下载                                                                                                                                                              |
+| Navicat Premium                                | 通杀                                                                                        |   ✅   |   ✅   | ✅   | 需要从Mac App Store 下载                                                                                                                                                              |
+| Navicat 16 ForOracle                           | 通杀                                                                                        |   ❌   |   ✅   | ✅   | 需要从Mac App Store 下载 我下不到 ARM64 的版本                                                                                                                                                 |
 | Sublime Text                                   | [通杀](https://download.sublimetext.com/sublime_text_build_4154_mac.zip)                    |   ✅   |   ✅   | ✅   | 授权信息下面找。                                                                                                                                                                        |
-| Elpass                                         | [通杀](https://elpass.app/macos/Elpass-1.5.6-490.zip)                                       |   ✅   |   ✅   | ✅   | 无法使用云同步 签名后的app通病 无解 搭配Surge脚本可以做到5138年授权                                                                                                                                       |
+| Elpass                                         | [通杀](https://elpass.app/macos/Elpass-1.5.6-490.zip)                                       |   ✅   |   ✅   | ✅   | 无法使用云同步 签名后的 App 通病 无解 搭配 Surge 脚本可以做到5138年授权                                                                                                                                       |
 | Surge 5                                        | [通杀](https://dl.nssurge.com/mac/v5/Surge-5.4.0-2417-5fbf4315352d3132015458910d121712.zip) |   ✅   |   ✅   | ✅   | 年度好戏我愿称之为 《窃听风云8:赛博卧底》                                                                                                                                                          | 
-| CleanMyMac X                                   | 通杀                                                                                        |   ✅   |   ✅   | ✅   | com.macpaw.CleanMyMac4.Menu 单独也要注入 Helper每个版本不一样还是需要单独处理 暂时不弄了 不要下大陆特供版 更新地址: https://s3-us-west-2.amazonaws.com/updateinfo.devmate.com/com.macpaw.CleanMyMac4/beta/updates.xml | 
-| Microsoft Office Word/PowerPoint/Excel/Outlook | 通杀                                                                                        |   ✅   |   ✅   | ✅   | 365订阅版 需要从Mac AppStore 下载                                                                                                                                                       |
-| Stash                                          | [2.3.0](https://mac-release-static.stash.ws/Stash-build-221.zip)                          |   ❌   |   ✅   | ❌   | 无法设置全局代理 不知道哪里有问题 总体体验较差 不如surge                                                                                                                                                |
+| CleanMyMac X                                   | 通杀                                                                                        |   ✅   |   ✅   | ✅   | com.macpaw.CleanMyMac4.Menu 单独也要注入 Helper 每个版本不一样还是需要单独处理 暂时不弄了 不要下大陆特供版 更新地址: https://s3-us-west-2.amazonaws.com/updateinfo.devmate.com/com.macpaw.CleanMyMac4/beta/updates.xml | 
+| Microsoft Office Word/PowerPoint/Excel/Outlook | 通杀                                                                                        |   ✅   |   ✅   | ✅   | 365订阅版 需要从 Mac App Store 下载                                                                                                                                                       |
+| Stash                                          | [2.3.0](https://mac-release-static.stash.ws/Stash-build-221.zip)                          |   ❌   |   ✅   | ❌   | 无法设置全局代理 不知道哪里有问题 总体体验较差 不如 Surge                                                                                                                                                |
 | Paste                                          | 4.0.9                                                                                        |   ✅   |   ✅   | ✅   |     通杀特征码变了 下次再说                                                                                                                                                                            | 
 | App Cleaner & Uninstaller                      | 8.2.2                                                                                     |   ✅   |   ✅   | ✅   | 因为签名会导致提示盗版，有空在再弄。                                                                                                                                                              | 
-| Affinity Photo 2/Designer 2/Publisher 2 全家桶    | 2.1.1                                                                                     |   ✅   |   ✅   | ✅   | 需要从Mac AppStore 下载                                                                                                                                                              |
+| Affinity Photo 2/Designer 2/Publisher 2 全家桶    | 2.1.1                                                                                     |   ✅   |   ✅   | ✅   | 需要从Mac App Store 下载                                                                                                                                                              |
 | ProxyMan                                       | [通杀](https://download.proxyman.io/49100/Proxyman_4.10.0.dmg)                            |   ✅   |   ✅   | ✅   | 更新地址: https://proxyman.io/osx/version.xml                                                                                                                                       |
-| BuhoCleaner                                    | [通杀](https://www.drbuho.com/buho-public-files/buhocleaner/buhocleaner197150.dmg)       |   ✅   |   ✅   | ✅   | 更新地址:https://www.drbuho.com/buho-public-files/buhocleaner/appcast.xml                                                                                                           |
+| BuhoCleaner                                    | [通杀](https://www.drbuho.com/buho-public-files/buhocleaner/buhocleaner197150.dmg)       |   ✅   |   ✅   | ✅   | 更新地址：https://www.drbuho.com/buho-public-files/buhocleaner/appcast.xml                                                                                                           |
 | Macs Fan Control                                    | [通杀](https://crystalidea.com/downloads/macsfancontrol.zip)       |   ✅   |   ✅   | ✅   | |
-| TablePlus                                    | [通杀](https://tableplus.com/release/osx/tableplus_latest)       |   ✅   |   ✅   | ✅   | 老子第一次喷App: 傻逼App 做的跟shit一样 我伪造的授权信息在内存数据结构被篡改成不知道哪来的ObjectC对象引起崩溃 浪费老子时间 真的垃圾App 作者能不能几把优化一下？？ 就这破App 老子弄到凌晨三点 真的狗都不用 而且连个汉化都没有 格局Down Down了 |
+| TablePlus                                    | [通杀](https://tableplus.com/release/osx/tableplus_latest)       |   ✅   |   ✅   | ✅   |  |
 |Transmit 5|5.9.2|✅|✅|✅| 需要从App Store下载
-|DevUtils|[1.17.0](https://devutils.com/archives/DevUtils-1.17.0.dmg)|✅|✅|✅| 功能可用 但是激活状态我懒得改了 作者写的这个App代码质量之烂令人无语 不想多说什么了
+|DevUtils|[1.17.0](https://devutils.com/archives/DevUtils-1.17.0.dmg)|✅|✅|✅| 功能可用 但是激活状态我懒得改了 作者写的这个 App 代码质量之烂令人无语 不想多说什么了
 |MP3Tag|[1.8.6 (86)](https://updates.mp3tag.app/Mp3tag-1.8.6.zip)|❌|✅|✅| 序列号随便输入 全部激活
-|Widgetter|[通杀](https://apps.apple.com/cn/app/widgetter-%E5%B0%8F%E5%B7%A5%E5%85%B7-%E6%A1%8C%E9%9D%A2%E5%A3%81%E7%BA%B8-%E4%B8%BB%E9%A2%98-%E5%B1%8F%E4%BF%9D/id1553223588?mt=12)|✅|✅|✅| MAS下载 激活全部功能
+|Widgetter|[通杀](https://apps.apple.com/cn/app/widgetter-%E5%B0%8F%E5%B7%A5%E5%85%B7-%E6%A1%8C%E9%9D%A2%E5%A3%81%E7%BA%B8-%E4%B8%BB%E9%A2%98-%E5%B1%8F%E4%BF%9D/id1553223588?mt=12)|✅|✅|✅| MAS 下载 激活全部功能
 |Bartender 5|[5.0.36-通杀](https://macbartender.com/B2/updates/5-0-31/Bartender%205.zip)|✅|✅|✅| 更新地址 https://www.macbartender.com/B2/updates/AppcastB5.xml
 |Parallels Desktop|[19.1.0](https://download.parallels.com/desktop/v19/19.1.0-54729/ParallelsDesktop-19.1.0-54729.dmg) |   ✅   |   ✅   | ✅   |  谁会想到会有人以全家除他以外(含亲妈)全部暴毙的代价冒名顶替别人给我发恐吓律师函呢？
 |QCAD-Intel|[3.28.2](https://www.qcad.org/archives/qcad/qcad-3.28.2-trial-macos-10.14-13.dmg)|❌|✅|✅| ARM懒得弄
 
 | Adobe 全家桶               | 版本           | ARM64 | Intel | 特殊说明 全家桶全部支持打开SIP下使用                         |
 |:------------------------|:-------------|:-----:|:-----:|:-----------------------------|
-| Adobe PhotoShop         | 通杀           |   ✅   |   ✅   | PS:Intel上的神经滤镜已经完美可用 ARM的暂时不行                |
+| Adobe PhotoShop         | 通杀           |   ✅   |   ✅   | PS：Intel 上的神经滤镜已经完美可用 ARM64 的暂时不行                |
 | Adobe Acrobat Pro           | 23.006.20320 |   ✅   |   ✅   |                              |
-| Adobe Illustrator       | 28.0.0       |   ✅   |   ✅   | ARM64 测试通过 X86没有测试过 大家自行测试   |
+| Adobe Illustrator       | 28.0.0       |   ✅   |   ✅   | ARM64 测试通过 X86 没有测试过 大家自行测试   |
 | Adobe Lightroom      | 7.0         |   ❌    |   ✅   | 注入后先点试用 然后过期后可以正常使用 |
 | Adobe Lightroom Classic | 13.0.1         |   ❌   |   ✅   | 注入后先点试用 然后过期后可以正常使用                 |
-| Adobe InCopy 2024      | 19.0.0.151         |   ✅    |   ❌   | 在M1 Mac Mini 中测试通过 |
-| Adobe InDesign 2024      | 19.0.0.151         |   ✅    |   ❌   | 在M1 Mac Mini 中测试通过 |
-| Adobe Premiere Pro 2024     | 24.0.0         |   ✅    |   ✅   | 在M1 Mac Mini 中测试通过 |
-| Adobe After Effects 2024      | 24.0.0         |   ✅    |   ✅   | 在M1 Mac Mini 中测试通过 |
-| Adobe Animate 2024      | 24.0         |   ✅   |   ✅   | 在M1 Mac Mini 中测试通过 |
-| Adobe Audition 2024      | 24.0.0.46         |   ✅    |   ✅   | 在M1 Mac Mini 中测试通过 |
-| Adobe Media Encoder 2024      | 24.0         |   ✅    |   ✅   | 在M1 Mac Mini 中测试通过 |
+| Adobe InCopy 2024      | 19.0.0.151         |   ✅    |   ❌   | 在 M1 Mac Mini 中测试通过 |
+| Adobe InDesign 2024      | 19.0.0.151         |   ✅    |   ❌   | 在 M1 Mac Mini 中测试通过 |
+| Adobe Premiere Pro 2024     | 24.0.0         |   ✅    |   ✅   | 在 M1 Mac Mini 中测试通过 |
+| Adobe After Effects 2024      | 24.0.0         |   ✅    |   ✅   | 在 M1 Mac Mini 中测试通过 |
+| Adobe Animate 2024      | 24.0         |   ✅   |   ✅   | 在 M1 Mac Mini 中测试通过 |
+| Adobe Audition 2024      | 24.0.0.46         |   ✅    |   ✅   | 在 M1 Mac Mini 中测试通过 |
+| Adobe Media Encoder 2024      | 24.0         |   ✅    |   ✅   | 在 M1 Mac Mini 中测试通过 |
 
 另请参见: [Adobe激活产品说明](./Adobe说明.md)
 
@@ -204,13 +197,13 @@ PD 19 说明与注意事项:<br>
 
 1. 注入后先不要打开PD, 去运行"Parallels_原始人_起洞.command", PD将会自动启动。
 2. 每次打开PD都要重复步骤1才能完美使用。步骤1执行一次之后只要PD你没有退出, 就可以直接使用PD不需要再去执行步骤1。
-3. 总结: 原始人,起洞！
+3. 总结: 原始人，起洞！
 
 灵感和解决思路来自于:<br>
 仓库: https://github.com/trueToastedCode/ParallelsLab/tree/main<br>
-非常感谢trueToastedCode提出的想法和美妙设计！
+非常感谢 trueToastedCode 提出的想法和美妙设计！
 
-非常感谢@trueToastedCode，PD 19.1 的破解正是由@trueToastedCode的努力研究成果！
+非常感谢 @trueToastedCode，PD 19.1 的破解正是由 @trueToastedCode 的努力研究成果！
 
 ## Stash
 
@@ -224,16 +217,11 @@ ElPass: https://elpass.app/macos/appcast-beta.xml
 
 ## Surge
 
-目前最新支持 Surge 5.4.0 2417版本.
+目前最新支持 Surge 5.4.0 2417 版本.
 
 laoliu，good morning. not good also fine, follow u.
 
-Surge盗版用户请支持正版。<br>
-我对开发者致敬说个早上好也被某些无脑用户过度解读是嘲讽开发者是吧？那我直接说操你妈是不是你全家骨灰都被我扬了？<br>
-Surge是非常好的一个产品，我发我的补丁 你支持你自己的正版，who care u?<br>
-有的人不要两头带节奏 在正版群对开发者那边截图破解版嘲笑还打着为开发者着想的幌子拱火 另一边下破解版在别的电脑上用
-这种人你的米线很低我就不评价了 但是你的🐎肯定必死。<br>
-
+Surge 盗版用户请支持正版。<br>
 对开发者团队我无意冒犯，早上好。<br>
 
 Surge 更新地址: https://www.nssurge.com/mac/v5/appcast-signed-beta.xml <br>
@@ -241,16 +229,14 @@ Surge 更新地址: https://www.nssurge.com/mac/v5/appcast-signed-beta.xml <br>
 一切完美。感谢QQ 302***3398 用户无偿提供授权信息。<br>
 目前错误已全部修正。<br>
 之前安装过旧版本的用户进Surge后先卸载一遍Helper帮助程序才能正常安装帮助程序挂上代理。点击安装帮助程序没反应的不是破解的问题，能不能先去点一下卸载帮助程序呢？<br>
-如果你因为某些软件缺陷第一反应质疑是破解的问题，那么我只能说“SB 你是对的 都是破解的问题 你说的太对了 完全不是你的问题
-完全不是原始软件的问题”因为跟蠢货争论只会浪费我的生命。<br>
 
-## 拦截激活部分App
+## 拦截激活部分 App
 
-Surge可以利用拦截修改http返回值的方式破解下面的app而无需修改原始App。下面是脚本破解步骤，如果你不需要用下面的App，看到这里就可以关闭网页了。
+Surge 可以利用拦截修改 http 返回值的方式破解下面的 App 而无需修改原始 App。下面是脚本破解步骤，如果你不需要用下面的 App，看到这里就可以关闭网页了。
 
-Surge开启MitM和脚本功能，然后: <br>
+Surge 开启 MitM 和脚本功能，然后: <br>
 
-1. 在你的配置文件中加入例子中提供文件中的Script字段信息:
+1. 在你的配置文件中加入例子中提供文件中的 Script 字段信息:
    [Surge脚本配置例子.conf](Surge%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC%2FSurge%E8%84%9A%E6%9C%AC%E9%85%8D%E7%BD%AE%E4%BE%8B%E5%AD%90.conf)
    ![img.png](imgs/img.png)
    ![img_1.png](imgs/img_1.png)
@@ -258,11 +244,11 @@ Surge开启MitM和脚本功能，然后: <br>
 
 2. [paddle_act.js](Surge%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC%2Fpaddle_act.js)这个文件一定要复制到conf文件所在目录中。
 
-3. 记得Https解密打开，并且信任证书，MitM域名加入*.paddleapi.com保存即可。<br>
+3. 记得 https 解密打开，并且信任证书，MitM 域名加入 *.paddleapi.com 保存即可。<br>
    如果要实现五千年授权需要打开增强模式并加入新的域名: api.elpass.app<br>
    ![img.png](imgs/img3.png)
 
-4. 在App中随意输入序列号和邮箱，点击激活后秒激活。
+4. 在 App 中随意输入序列号和邮箱，点击激活后秒激活。
 
 已测试支持以下App:
 
@@ -279,85 +265,38 @@ Surge开启MitM和脚本功能，然后: <br>
 
 # 提示
 
-1. 会自动扫描本地安装的App，你只需要在想注入的App后面输入y即可。
-2. Adobe App如果不想让官方ACC乱拉屎，可以用这个仓库下载v6版本的离线安装包: https://github.com/Drovosek01/adobe-packager,
-   然后配合AntiCC之类的组件运行Adobe产品。
-3. 激活之后由于App还需要依赖我的注入代码，所以不要移动注入文件夹或者删除注入文件夹，有的人用完就把注入文件夹删了，第二天就到处说破解不稳定第二次就崩溃。
-   这种人你动动你那个🐷脑子想想为什么第一次能用删了我的注入文件夹第二次打开就崩溃？
+1. 会自动扫描本地安装的 App，你只需要在想注入的 App 后面输入y即可。
+2. Adobe App 如果不想让官方 ACC 乱拉屎，可以用这个仓库下载 v6 版本的离线安装包: https://github.com/Drovosek01/adobe-packager,
+   然后配合 AntiCC 之类的组件运行 Adobe 产品。
+3. 激活之后由于 App 还需要依赖我的注入代码，所以不要移动注入文件夹或者删除注入文件夹。
 4. 脚本如果没有权限执行注入操作终端报错类似于下面这样:<br>
    ![示例](image-2.png)
-   那是因为SIP的安全策略限制不允许运行不符合安全策略的代码执行，所以你需要先打开:<br>
+   那是因为 SIP 的安全策略限制不允许运行不符合安全策略的代码执行，所以你需要先打开:<br>
    设置 - 隐私与安全性 - 开发者工具:<br>
    ![开发者工具](image.png)<br>
    并打开终端执行代码策略:<br>
    ![策略](image-1.png)<br>
 
-   最后重新执行即可正常注入。这是MacOS的安全策略，麻烦你动动你那个b手点一下好吗？
+   最后重新执行即可正常注入。这是 macOS 的安全策略。
 
 
 # 警告
 
-一定要关闭SIP，因为我使用的注入方式依赖于关闭SIP。
-但是有例外，上方表格中App的SIP状态为"✅"则可以不用关闭SIP即可使用,并且注入下载文件夹不需要保留，注入后可以删除。
-本库中几乎所有的App都建议你在打开SIP状态下使用，不建议用户关闭SIP，除非你很懂这块。
+一定要关闭 SIP，因为我使用的注入方式依赖于关闭 SIP。
+但是有例外，上方表格中 App 的 SIP 状态为"✅"则可以不用关闭 SIP 即可使用,并且注入下载文件夹不需要保留，注入后可以删除。
+本库中几乎所有的 App 都建议你在打开 SIP 状态下使用，不建议用户关闭 SIP，除非你很懂这块。
 
 # 目的
 
-本项目是Free的、开源的、基于互联网最原始的共享精神的、不接受任何打赏的、无所不包的、令人感叹的、无与伦比的、精妙绝伦的、化腐朽为神奇的、逆天的、养生的、抽象的、二次元的、OP的。
+本项目是 Free 的、开源的、基于互联网最原始的共享精神的、不接受任何打赏的、无所不包的、令人感叹的、无与伦比的、精妙绝伦的、化腐朽为神奇的、逆天的、养生的、抽象的、二次元的、OP的。
 
-在2023年，所有人都逐渐觉得打赏、付费才是理所应当的，哪怕是某些人只做了一件从外网搬运到国内的工作，也应该得到鼓励。
+在 2023 年，所有人都逐渐觉得打赏、付费才是理所应当的，哪怕是某些人只做了一件从外网搬运到国内的工作，也应该得到鼓励。
 我不能说这种行为是完全错误的，只能说有些人恬不知耻见利忘义。哪怕是打赏也应该基于双方意愿的基础上，而不是用“打赏后才能下载”这种理由强奸用户的使用习惯，把用户变成必须付费的蠢驴，并辅以几十元的超低价注册会员费用钝刀割肉式的强奸用户。
 
-当然，这种用户也确实是个蠢货。有这种钱你买正版得了，别跟我说太贵，你出去跟朋友吃一顿好点的饭200起步，大部分好软件正版才不到100块钱。抽包烟软中煊赫门起步，面对19.9年费会员时却面露难色，好像杀了你的🐎一样。相信我，你也并不是真的需要这些软件，只是人云亦云盲目从众罢了。
+当然，这种用户也确实是个蠢货。有这种钱你买正版得了，别跟我说太贵，你出去跟朋友吃一顿好点的饭 200 起步，大部分好软件正版才不到 100 块钱。抽包烟软中煊赫门起步，面对 19.9 年费会员时却面露难色。相信我，你也并不是真的需要这些软件，只是人云亦云盲目从众罢了。
 
 我认为，共享精神不应该建立在物质上，我深刻的理解金钱对人的吸引和动力，但这种精神本身就超越了物质。
 
-# 交流
-
-别让欲望击穿你の意志
-
-加加我的群组,挑战互联网米线下限。
-https://t.me/+zndAx24TgadkY2E1
-
-下方小作文阅前预警:
-
-- 大家都知道楼主一向是有话直说 比较单纯
-- 喷人解决不了问题 但是能解决一部分人潜在会提出的问题
-- 但是请大家放心，楼主素质是很高的 爱恨分明。
-- 玻璃心的人现在立刻关闭当前网页，继续阅读我怕你被我喷的到处散布谣言说我坏话败我路人缘。
-- 有些人不专门写小作文喷一下真的就是为所欲为，本来不想搭理但是有的人真的该喷。
-
-本群欢迎以下人群进入:
-
-- 愿意学习交流安全共享知识技术的人 不区分大佬和新手 一律欢迎
-- 不抄ChatGPT答案的人
-  - 他妈的ChatGPT给的答案都是0x1000为例子 有的人猪脑子直接复制答案 完全看不到gpt说了是“例如” 还他妈把0xFFFC这种答案复制粘贴
-      你这种人确实没脑子 别进了
-  - 真想进就认真答题 错了也会放 我最鄙视的就是没脑子抄答案的人
-
-本群禁止以下人群进入:
-
-- 因为“7.11”停更事件被动引流而来的围观群众
-- 进来只为发一句“慕名而来”的人
-- 加群原因写一句“不知道”/“从xxx地方看到的”/“进来看18岁妹妹后续”这种傻逼
-
-符合以上条件的人先掂量一下你的🐎有几个。<br>
-有些傻逼进来就为发一句“慕名而来”或者发一张截图，配文“从xxx地方看到的”，极其影响老子心情。<br>
-本来18岁妹妹g了老子心情就很不好，反复在老子眼前刷要不是老子素质高早他妈喷你了，你是个什么东西要你在这“慕名而来”？<br>
-你给老子上眼药老子还不能喷你的？在我看不见的地方刷刷算了，别tm来老子群里刷。<br>
-
-之前还看到有人说老子利用这件事给这个群引流的那些傻逼你听好：<br>
-
-* 首先为接下来的话我给你先道个歉。<br>
-* 我引你妈了个b流呢？老子跟18岁妹妹郎才女貌要你在这围观评价？你是个什么臭鱼烂虾？引流？老子谈恋爱跟你有几把关系？傻逼。<br>
-*
-
-祝福我的人我虚心感谢，嘲笑我的人先照镜子看看自己单身二十多年天天躲房间里看日本黄片到处求二次元h漫N刷天天做梦自己能碰到女神小姐姐主动倒贴实际上除了同学朋友也很少月薪三千最后没办法找个190kg坦克还要忍受小仙女作妖27、8岁除了会躲房间里打胶其他什么都不会一事无成的失败人生，你这种废物也好意思评价我？我要是你早他妈从长江大桥上跳下去remake别在这浪费父母资源当个真孝子。
-
-* 你没有脑子不要觉得所有人都没脑子，群里全是(大部分，小部分确实不行)
-  安全行业的兴趣爱好者或者安全行业的专家,我需要一窍不通的围观群众拉低我群含金量？<br>
-* 我不需要没脑子的人加进群，ok？这种劣质流量等于垃圾，在我眼里这种人一点价值都没有，除了挨喷没有任何作用。
-* 最后声明: 我热烈欢迎安全爱好者一起学习研究，但是没脑子的围观党禁止加群。这种人你非要加群可以，我没事就喷你。看是你的赛博🐎多还是我的键盘厉害。
 
 # ~~停更~~
 
